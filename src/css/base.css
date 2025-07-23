@@ -49,7 +49,7 @@ main:has(.back-link) {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(5, 1fr); /* 👈 5 колонок */
   gap: 20px;
   padding: 0;
   margin: 0;
@@ -58,19 +58,26 @@ main:has(.back-link) {
   max-width: 1200px;
 }
 
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 .gallery-item img {
   width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  height: 200px;
+  object-fit: cover;
 }
 
 .gallery-item img:hover {
   transform: scale(1.03);
 }
-
+.load-more {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .loader {
   width: 16px;
   height: 16px;
