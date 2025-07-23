@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>goit-js-hw-09</title>
+  <title>goit-js-hw-12</title>
   <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/assets/favicon-DcBtz0py.svg" />
   <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
-  <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-DqB7j7Ix.js">
-  <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-CWKLx11g.css">
-  <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-D_gY52tW.css">
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-LK6CqzKq.js">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-CX4EDM7x.css">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-DvTQNX2D.css">
 </head>
 
 <body style="background-color: gold;">
@@ -28,15 +28,16 @@
   </header>
   <h1>YP - JS-HW-12</h1>
   <div class="center">
-    <form class="form">
+    <form id="search-form" class="form">
       <label>
         <input type="text" name="search-text" placeholder="Search images..." required>
       </label>
       <button type="submit">Search</button>
     </form>
     <ul class="gallery"></ul>
-    <span class="loader is-hidden"></span>
 
+    <button class="load-more hidden">Load more</button>
+    <span class="loader is-hidden"></span>
   </div>
 </body>
 
