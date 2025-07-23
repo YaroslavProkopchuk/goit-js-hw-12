@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>goit-js-hw-09</title>
+  <title>goit-js-hw-12</title>
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
 </head>
@@ -25,15 +25,16 @@
   </header>
   <h1>YP - JS-HW-12</h1>
   <div class="center">
-    <form class="form">
+    <form id="search-form" class="form">
       <label>
         <input type="text" name="search-text" placeholder="Search images..." required>
       </label>
       <button type="submit">Search</button>
     </form>
     <ul class="gallery"></ul>
-    <span class="loader is-hidden"></span>
 
+    <button class="load-more hidden">Load more</button>
+    <span class="loader is-hidden"></span>
   </div>
   <script type="module" src="./main.js"></script>
 </body>
