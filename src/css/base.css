@@ -47,6 +47,10 @@ main:has(.back-link) {
   display: none !important;
 }
 
+.load-more.hidden {
+  display: none !important;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 👈 5 колонок */

@@ -41,6 +41,7 @@ form.addEventListener('submit', async event => {
     const { hits, totalHits } = data;
 
     if (hits.length === 0) {
+      hideLoadMoreButton();
       iziToast.info({
         message:
           'Sorry, there are no images matching your search query. Please try again!',
